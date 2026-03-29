@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mystic Charms</title>
+
+<style>
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
+        body { 
+            background: linear-gradient(135deg, #fff1f7 0%, #f8e8f0 100%); 
+            font-family: Arial; 
+            color: #333;
+        }
+    .cart-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 22px 20px;
+        background: white;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    .left-nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .back-link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .home-text {
+        margin-left: 8px;
+        font-size: 25px;
+        color: #3d0026;
+        font-family: "Times new roman";
+        font-weight: bold;
+    }
+    .home-text:hover { color: #d63384; }
+
+    .center-nav {
+        flex: 1;
+        text-align: center;
+    }
+
+    .cart-title {
+        font-size: 25px;
+        margin: 0;
+        font-weight: 600;
+        font-family: "Times new roman";
+    }
+</style>
+
+</head>
+<body>
+
+    <nav class="cart-nav">
+    <div class="left-nav">
+        <a href="index.html" class="back-link">
+            <img src="back.png" alt="Back" class="icon">
+            <span class="home-text">Home</span>
+        </a>
+    </div>
+
+    <div class="center-nav">
+        <h2 class="cart-title">Favorites / Added to Cart</h2>
+    </div>
+</nav>
+</body>
+</html>
